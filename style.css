@@ -1,0 +1,95 @@
+body {
+    background-image: url('bg.jpg');
+}
+
+.calculator {
+    width: 90%;
+    max-width: 400px;
+    margin: 50px auto;
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #f0f0f0;
+}
+
+.calculator input[type="text"] {
+    width: calc(100% - 20px);
+    margin-bottom: 10px;
+    padding: 10px;
+    font-size: 18px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.numbers {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    width: 60%;
+}
+
+.operators {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 40%;
+}
+
+.calculator button {
+    padding: 15px;
+    font-size: 18px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    color: #000;
+}
+
+.calculator button:active {
+    background-color: #f0f0f0;
+}
+
+.operator1 {
+    background-color: red;
+    color: white;
+}
+
+.operator2 {
+    background-color: #E4DEBE;
+    color: white;
+}
+.operator3 {
+    background-color: #E4DEBE;
+    color: white;
+}
+.operator4 {
+    background-color: #E4DEBE;
+    color: white;
+}
+.operator5 {
+    background-color: #E4DEBE;
+    color: white;
+}
+.operator6 {
+    background-color: #322C2B;
+    color: white;
+}
+.operator:active {
+    background-color: #ffbb00;
+}
+
+@media (max-width: 500px) {
+    .calculator input[type="text"] {
+        font-size: 16px;
+    }
+    
+    .calculator button {
+        font-size: 16px;
+        padding: 10px;
+    }
+}
